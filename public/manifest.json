@@ -1,0 +1,24 @@
+{
+  "short_name": "LandExchange",
+  "name": "LandExchange",
+  "description": "Farm PATTIE with LandExchange LP Tokens",
+  "homepage_url": "https://app.landx.io/",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#1FC7D4",
+  "background_color": "#ffffff",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    }
+  ],
+  "iconPath": "/images/pcb.png"
+}
