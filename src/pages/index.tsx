@@ -1,7 +1,7 @@
 import { dehydrate, QueryClient } from '@tanstack/react-query'
 import { GetStaticProps } from 'next'
 import { CHAIN_IDS } from 'utils/wagmi'
-import Presale from 'views/Presale'
+import Presale from 'views/Home'
 
 const IndexPage = () => {
   return <Presale />

@@ -16,12 +16,12 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: ${({ theme }) => theme.colors.gradientBackground};
-    // background: url('/images/background.jpg');
+    background: ${({ theme }) => theme.colors.background};
+    // background-image: url('/images/background.jpg');
     // background-repeat: no-repeat;
     // background-size: cover;
     // background-position: center;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 
     img {
       height: auto;

@@ -15,8 +15,8 @@ export const shadows = {
 
 export const tokens = {
   colors: {
-    light: lightColors,
-    dark: lightColors,
+    light: darkColors,
+    dark: darkColors,
   },
   fonts: {
     normal: "'Kanit', sans-serif",

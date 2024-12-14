@@ -1,4 +1,5 @@
 import ResetCSS from 'ResetCSS'
+import $ from 'jquery'
 import { ToastListener } from 'contexts'
 import BigNumber from 'bignumber.js'
 import { ScrollToTopButtonV2 } from 'components/ScrollToTopButton'
@@ -13,7 +14,9 @@ import { DefaultSeo } from 'next-seo'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import Script from 'next/script'
-import { Fragment } from 'react'
+import { Fragment, useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import { PersistGate } from 'redux-persist/integration/react'
 
 import { persistor, useStore } from 'state'
@@ -49,6 +52,29 @@ function MyApp(props: AppProps<{ initialReduxState: any; dehydratedState: any }>
   const { pageProps, Component } = props
   const store = useStore(pageProps.initialReduxState)
 
+  useEffect(() => {
+    // accordion
+    $('.accordion > li:eq(0) a').addClass('active').next().slideDown()
+
+    $('.accordion a').click(function (j) {
+      // eslint-disable-next-line no-var
+      var dropDown = $(this).closest('li').find('p')
+
+      $(this).closest('.accordion').find('p').not(dropDown).slideUp()
+
+      if ($(this).hasClass('active')) {
+        $(this).removeClass('active')
+      } else {
+        $(this).closest('.accordion').find('a.active').removeClass('active')
+        $(this).addClass('active')
+      }
+
+      dropDown.stop(false, true).slideToggle()
+
+      j.preventDefault()
+    })
+  })
+
   return (
     <>
       <Head>
@@ -65,6 +91,7 @@ function MyApp(props: AppProps<{ initialReduxState: any; dehydratedState: any }>
           // eslint-disable-next-line @next/next/no-sync-scripts
           <script src="https://public.bnbstatic.com/static/js/mp-webview-sdk/webview-v1.0.0.min.js" id="mp-webview" />
         )}
+        <link rel="stylesheet" href="/main.css" />
       </Head>
       <DefaultSeo {...SEO} />
       <Providers store={store} dehydratedState={pageProps.dehydratedState}>
@@ -124,6 +151,13 @@ type AppPropsWithLayout = AppProps & {
 const ProductionErrorBoundary = Fragment
 
 const App = ({ Component, pageProps }: AppPropsWithLayout) => {
+  useEffect(() => {
+    AOS.init({
+      easing: 'ease-out-cubic',
+      once: true,
+      offset: 50,
+    })
+  }, [])
   if (Component.pure) {
     return <Component {...pageProps} />
   }

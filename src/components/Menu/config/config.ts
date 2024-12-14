@@ -80,11 +80,11 @@ const config: (
     //   image: '/images/decorations/pe2.png',
     //   items: [].map((item) => addMenuItemSupported(item, chainId)),
     // },
-    {
-      label: 'Presale',
-      href: '/presale',
-      items: [].map((item) => addMenuItemSupported(item, chainId)),
-    },
+    // {
+    //   label: 'Presale',
+    //   href: '/presale',
+    //   items: [].map((item) => addMenuItemSupported(item, chainId)),
+    // },
   ].map((item) => addMenuItemSupported(item, chainId))
 
 export default config

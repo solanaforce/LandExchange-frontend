@@ -18,7 +18,6 @@ const ResetCSS = createGlobalStyle`
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
     vertical-align: baseline;
   }
   /* HTML5 display-role reset for older browsers */
@@ -62,12 +61,6 @@ const ResetCSS = createGlobalStyle`
   *::after {
     box-sizing: border-box;
   }
-  * {
-    font-family: 'Kanit', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
   /* Number */
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {

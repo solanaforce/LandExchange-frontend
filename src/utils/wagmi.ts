@@ -36,11 +36,11 @@ createWeb3Modal({
   allowUnsupportedChain: false,
   enableAnalytics: true, // Optional - defaults to your Cloud configuration
   enableOnramp: true, // Optional - false as default
-  themeMode: 'light',
+  themeMode: 'dark',
   themeVariables: {
-    '--w3m-color-mix': '#fffbe2',
+    '--w3m-color-mix': '#e2e2ff',
     '--w3m-color-mix-strength': 10,
-    '--w3m-accent': '#e6ac00',
+    '--w3m-accent': '#06003f',
     '--w3m-border-radius-master': '1.5px'
   }
 })

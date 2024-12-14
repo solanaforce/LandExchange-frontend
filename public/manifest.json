@@ -1,7 +1,7 @@
 {
   "short_name": "LandExchange",
   "name": "LandExchange",
-  "description": "Farm PATTIE with LandExchange LP Tokens",
+  "description": "",
   "homepage_url": "https://app.landx.io/",
   "start_url": ".",
   "display": "standalone",

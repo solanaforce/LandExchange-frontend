@@ -66,10 +66,10 @@ const Inner = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   // transition: margin-top 0.2s, margin-left 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   transform: translate3d(0, 0, 0);
   max-width: 100%;
-  ${({ theme }) => theme.mediaQueries.lg} {
+  // ${({ theme }) => theme.mediaQueries.lg} {
     // margin-left: ${({ isPushed }) => `${isPushed ? SIDEBAR_WIDTH_FULL + 10 : SIDEBAR_WIDTH_REDUCED}px`};
-    max-width: ${({ isPushed }) => `calc(100% - ${isPushed ? SIDEBAR_WIDTH_FULL + 10 : SIDEBAR_WIDTH_REDUCED}px)`};
-  }
+    // max-width: ${({ isPushed }) => `calc(100% - ${isPushed ? SIDEBAR_WIDTH_FULL + 10 : SIDEBAR_WIDTH_REDUCED}px)`};
+  // }
 `;
 
 const Menu: React.FC<React.PropsWithChildren<NavProps>> = ({
@@ -93,7 +93,7 @@ const Menu: React.FC<React.PropsWithChildren<NavProps>> = ({
 
   const topBannerHeight = isMobile ? TOP_BANNER_HEIGHT_MOBILE : TOP_BANNER_HEIGHT;
 
-  const totalTopMenuHeight = isMounted && banner ? MENU_HEIGHT + topBannerHeight : MENU_HEIGHT;
+  const totalTopMenuHeight = isMounted && banner ? MENU_HEIGHT : MENU_HEIGHT;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -141,7 +141,7 @@ const Menu: React.FC<React.PropsWithChildren<NavProps>> = ({
             <StyledNav>
               <Flex>
                 <Logo
-                  href="/"
+                  href="https://landx.io"
                 />
                 {/* <AtomBox display={{ xs: "none", md: "block" }}> */}
                   <TopMenuItems items={links} activeItem={activeItem} activeSubItem={activeSubItem} ml="24px" />
@@ -161,7 +161,7 @@ const Menu: React.FC<React.PropsWithChildren<NavProps>> = ({
               </Flex>
             </StyledNav>
           </FixedContainer>
-          <BodyWrapper mt={`${totalTopMenuHeight + 8}px`}>
+          <BodyWrapper mt={`${totalTopMenuHeight}px`}>
             {/* <Panel
               isPushed={isPushed}
               isMobile={isMobile}

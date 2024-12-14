@@ -11,6 +11,6 @@ export default {
     [ChainId.BSC]: '0xc87e21b684E2484FadeD8415e251E113E0F3C852',
   },
   presale: {
-    [ChainId.BSC]: '0x7B4D4C2735a42549faCE7B1F477Dd2fd6D6C17e9',
+    [ChainId.BSC]: '0x54E4b2fc09A3ED428F8c1Adb358c4f2b011AaF8d',
   },
 } as const satisfies Record<string, Record<number, `0x${string}`>>

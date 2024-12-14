@@ -183,7 +183,6 @@ const Presale = () => {
     new BigNumber(deposit?.toString() ?? "0").times(10 ** 18).div(112500000).isLessThanOrEqualTo(claim?.toString() ?? "0")
 
   return (
-    <Page>
       <Flex width="100%" flexDirection={["column", "column", "column", "column", "column", "column", "row"]} justifyContent="center">
         <Box
           maxWidth={["100%", "100%", "100%", "100%", "100%", "100%", "100%"]} 
@@ -482,7 +481,6 @@ const Presale = () => {
           </StyledAppBody>
         </Box>
       </Flex>
-    </Page>
   )
 }
 

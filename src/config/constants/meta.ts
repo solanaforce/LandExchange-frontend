@@ -19,7 +19,7 @@ interface PathList {
 const getPathList = (): PathList => {
   return {
     paths: {
-      '/': { title: 'Home'},
+      '/': { title: 'Presale'},
       '/swap': { basePath: true, title: 'Swap' },
       '/add': { basePath: true, title: 'Add Pool' },
       '/add/[[...currency]]': { basePath: true, title: 'Add Pool' },
