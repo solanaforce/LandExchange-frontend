@@ -438,11 +438,11 @@ const Presale = ({countdownNode}: {countdownNode: React.ReactNode}) => {
           </StyledAppBody>
           <StyledAppBody>
             <Box p="20px">
-              <Flex width="100%" justifyContent="space-between" px="5px" mb="10px">
+              {/* <Flex width="100%" justifyContent="space-between" px="5px" mb="10px">
                 <Text small>Status</Text>
                 <Text small color="primary">{status}</Text>
               </Flex>
-              <Divider />
+              <Divider /> */}
               <Flex width="100%" justifyContent="space-between" px="5px" mb="10px">
                 <Text small>Minimum Buy</Text>
                 <Text small>0.1 BNB</Text>
