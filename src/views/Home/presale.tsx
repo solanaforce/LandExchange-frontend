@@ -295,7 +295,7 @@ const Presale = ({countdownNode}: {countdownNode: React.ReactNode}) => {
                   <Divider />
                   <Flex width="100%" justifyContent="space-between" px="5px" mb="10px">
                     <Text small>Presale Rate</Text>
-                    <Text small>1 LDX = 0.0009 BNB</Text>
+                    <Text small>1 LDX = 0.000035 BNB</Text>
                   </Flex>
                   <Divider />
                   <Flex width="100%" justifyContent="space-between" px="5px" mb="10px">
