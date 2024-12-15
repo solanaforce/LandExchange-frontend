@@ -170,10 +170,12 @@ const Home: React.FC<React.PropsWithChildren> = () => {
         >
           <Flex flexDirection="column" width="100%">
             <Text fontSize="48px">Land Exchange Presale</Text>
-            {/* <Text fontSize="48px">Land Exchange Presale</Text> */}
-            <p>
-              LandX addresses the pressing need for accessible, transparent, and profitable land investments through blockchain technology. By tokenizing land into NFTs, the platform democratizes ownership, enabling investors of all scales to participate in high-value land and development projects. Leveraging the BSC blockchain, LandX ensures efficient, cost-effective, and secure transactions.
-              Traditional land investments face challenges such as high barriers to entry, lack of liquidity, and inefficient management of land assets. LandX redefines these limitations by offering fractional ownership through NFTs, providing profit-sharing mechanisms, and fostering global collaboration.
+            <Text fontSize="22px">Empowering Landowners with Liquidity and Flexibility</Text>
+            <br />
+            {/* <Text fontSize="24px">Bridge the Gap Between Land Ownership and Immediate Cash Flow</Text> */}
+            <p style={{color: 'white'}}>
+              Welcome to LandX Presale, a revolutionary blockchain-based solution designed to provide landowners and developers with fast, secure, and flexible liquidity. 
+              By leveraging the power of blockchain, LandX helps unlock the value of your properties, offering immediate funding while ensuring a favorable selling process through our extensive agent network.
             </p>
           </Flex>
           <Box width="100%">
@@ -310,7 +312,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
             flexDirection={["column", "column", "column", "column", "row"]}
           >
           <div className="container">
-            <img src="images/faq.jpg" alt="" />
+            <img src="images/faq1.jpg" alt="" />
           </div>
           <div className="container">
             <div className="row">
@@ -325,39 +327,57 @@ const Home: React.FC<React.PropsWithChildren> = () => {
               <div className="col-lg-12 offset-lg-2">
                 <ul className="accordion">
                   <li>
-                    <a href="/">What is LandX?</a>
+                    <a href="/">What is the LandX Token (LDX), and why should I participate in the presale?</a>
                     <p>
-                    LandX is a groundbreaking blockchain-powered platform revolutionizing global land investment through the integration of NFTs for fractional ownership.
+                    The LDX token is the native cryptocurrency of the LandX platform. It powers the liquidity pool, enables staking for passive income, and allows holders to participate in profit sharing and governance. By joining the presale, you can secure LDX tokens at an 85% discount before public trading, which is set to begin in September 2025. Early participation allows you to benefit from staking rewards, loan interest returns, and ecosystem growth.
                     </p>
                   </li>
                   <li>
-                    <a href="/">How LandX works?</a>
+                    <a href="/">When does the presale begin, and what are the key details?</a>
                     <p>
-                    LandX addresses the challenges in traditional land investments through a blockchain-based platform that integrates NFTs, fractional ownership, and smart contracts.
+                    The LandX Token Presale starts on 13 December 2024 and ends for Phase 1 on 31 December 2024. Key details include:
+                    </p>
+                    <p>* Discount: 85% off the projected trading price.</p>
+                    <p>* Lock-Up Period: Staked tokens have a 6-month lock-up period.</p>
+                    <p>* Accepted Payments: Primary payment is BNB. Alternative payments include Bitcoin, USDT, and ETH, processed via Web3 wallets (e.g., MetaMask, Trust Wallet).</p>
+                    <p>* Loan Interest Returns: Investors in the liquidity pool and staked coin holders will earn a share of the interest generated from crypto-loan activities, proportional to their contributions.
+                    This is a limited-time opportunity to acquire tokens before they are publicly listed.</p>
+                  </li>
+                  <li>
+                    <a href="/">How do I participate in the LandX Token Presale?</a>
+                    <p>
+                    * Visit app.landx.io and create an account.
+                    </p>
+                    <p>* Link your Web3 wallet (e.g., MetaMask or Trust Wallet).</p>
+                    <p>* Purchase LDX tokens using BNB, Bitcoin, USDT, or ETH. (Special Crypto Bridge Required)</p>
+                    <p>* Complete the KYC verification process to purchase more LDX Tokens</p>
+                    <p>* Stake your tokens to start earning rewards, including loan interest returns, and contribute to the LandX liquidity pool. Phase 2</p>
+                  </li>
+                  <li>
+                    <a href="/">WWhat is the utility of LDX tokens, and how do staking rewards and loan interest returns work?</a>
+                    <p>
+                    LDX tokens are the foundation of the LandX ecosystem, offering multiple benefits:
+                    </p>
+                    <p>
+                    * Staking Rewards: Stake your tokens to earn passive income through profit sharing.
+                    </p>
+                    <p>* Loan Interest Returns: A portion of the interest generated from crypto loans provided to borrowers is distributed to liquidity pool contributors and staked coin holders, based on their proportional contribution.</p>
+                    <p>* Profit Sharing: Earn a share of the platform’s overall profits generated by its ecosystem.</p>
+                    <p>* Governance: Participate in voting on important decisions that shape the platform’s future.</p>
+                    <p>Rewards are distributed regularly and are tied directly to the performance of the platform.</p>
+                  </li>
+                  <li>
+                    <a href="/">When can I trade LDX tokens, and what happens after the presale?</a>
+                    <p>
+                    While trading will begin on major exchanges in September 2025, tokens purchased during the presale can be staked immediately to earn rewards, including loan interest returns. After the presale, the LandX platform will activate staking, expand its liquidity pool, and grow its ecosystem, offering early participants significant opportunities for long-term returns.
                     </p>
                   </li>
                   <li>
-                    <a href="/">What is LDX?</a>
-                    <p>At the heart of the Land Exchange lies DEF, the main token that powers the platform.</p>
-                  </li>
-                  <li>
-                    <a href="/">What is impact of Staking Rewards on Tokenomics</a>
+                    <a href="/">How do I stay updated and learn more about LandX?</a>
                     <p>
-                    Staking rewards are a critical part of the tokenomics framework for LandVault. While they incentivize participation and long-term holding, they must be carefully managed to ensure the ecosystem's sustainability and token value stability.
+                    For updates and announcements, visit app.landx.io for presale and landx.io for LandX Platform, follow LandX on social media, or subscribe to our newsletter. Stay informed about presale developments, token listings, and new opportunities in the LandX ecosystem.
                     </p>
                   </li>
-                  {/* <li>
-                    <a href="/">What is Pools?</a>
-                    <p>
-                      Each Dexfinity liquidity pool is a trading venue for a pair of ERC20 tokens. When a pool contract is
-                      created, its balances of each token are 0; in order for the pool to begin facilitating trades,
-                      someone must seed it with an initial deposit of each token. This first liquidity provider is the one
-                      who sets the initial price of the pool. They are incentivized to deposit an equal value of both
-                      tokens into the pool. To see why, consider the case where the first liquidity provider deposits
-                      tokens at a ratio different from the current market rate. This immediately creates a profitable
-                      arbitrage opportunity, which is likely to be taken by an external party.
-                    </p>
-                  </li> */}
                 </ul>
               </div>
             </div>
