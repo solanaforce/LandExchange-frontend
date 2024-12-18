@@ -187,7 +187,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
         <Presale 
           countdownNode={
             <FlipClockCountdown
-            to={new Date().getTime() + 24 * 3600 * 1000 + 5000}
+            to={new Date().getTime()}
             labels={['DAYS', 'HOURS', 'MINUTES', 'SECONDS']}
             labelStyle={{ fontSize: 10, fontWeight: 500, textTransform: 'uppercase' }}
             digitBlockStyle={{
@@ -202,7 +202,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
             // separatorStyle={{ color: 'red', size: '6px' }}
             duration={0.5}
           >
-            Finished
+            <Text fontSize="36px">Presale is live</Text>
           </FlipClockCountdown>
           } 
         />
@@ -329,8 +329,11 @@ const Home: React.FC<React.PropsWithChildren> = () => {
                   <li>
                     <a href="/">What is the LandX Token (LDX), and why should I participate in the presale?</a>
                     <p>
-                    The LDX token is the native cryptocurrency of the LandX platform. It powers the liquidity pool, enables staking for passive income, and allows holders to participate in profit sharing and governance. By joining the presale, you can secure LDX tokens at an 85% discount before public trading, which is set to begin in September 2025. Early participation allows you to benefit from staking rewards, loan interest returns, and ecosystem growth.
+                    The LDX token is the native cryptocurrency of the LandX platform. It powers the liquidity pool, enables staking for passive income, and allows holders to participate in profit sharing and governance.
                     </p>
+                    <p>By joining the presale, you can secure LDX tokens at up to 85% discount before public trading, which is set to begin in September 2025. The presale is structured into multiple tiers:</p>
+                    <p>* The earlier you join, the greater the discount: Each subsequent presale tier sees the token price increase by 15% to 36% from the previous tier.</p>
+                    <p>* Early participation not only offers significant price benefits but also allows you to maximize staking rewards, loan interest returns, and overall ecosystem growth.</p>
                   </li>
                   <li>
                     <a href="/">When does the presale begin, and what are the key details?</a>
@@ -350,11 +353,10 @@ const Home: React.FC<React.PropsWithChildren> = () => {
                     </p>
                     <p>* Link your Web3 wallet (e.g., MetaMask or Trust Wallet).</p>
                     <p>* Purchase LDX tokens using BNB, Bitcoin, USDT, or ETH. (Special Crypto Bridge Required)</p>
-                    <p>* Complete the KYC verification process to purchase more LDX Tokens</p>
                     <p>* Stake your tokens to start earning rewards, including loan interest returns, and contribute to the LandX liquidity pool. Phase 2</p>
                   </li>
                   <li>
-                    <a href="/">WWhat is the utility of LDX tokens, and how do staking rewards and loan interest returns work?</a>
+                    <a href="/">What is the utility of LDX tokens, and how do staking rewards and loan interest returns work?</a>
                     <p>
                     LDX tokens are the foundation of the LandX ecosystem, offering multiple benefits:
                     </p>

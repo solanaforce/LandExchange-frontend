@@ -127,7 +127,7 @@ const Presale = ({countdownNode}: {countdownNode: React.ReactNode}) => {
   const fullBalance = useMemo(() => {
     if (!limit) return "0"
     const max = limit - (deposit ?? 0n) > btfBalance ? btfBalance : limit - (deposit ?? 0n)
-    return getFullDisplayBalance(new BigNumber(max.toString()), 6)
+    return getFullDisplayBalance(new BigNumber(max.toString()), 18)
   }, [limit, btfBalance])
 
   const handleChange = useCallback(
@@ -257,7 +257,7 @@ const Presale = ({countdownNode}: {countdownNode: React.ReactNode}) => {
                   <Divider />
                   <Flex width="100%" justifyContent="space-between" px="5px" mb="10px">
                     <Text small>Token Name</Text>
-                    <Text small>LandExchange Token</Text>
+                    <Text small>Land Exchange Token</Text>
                   </Flex>
                   <Divider />
                   <Flex width="100%" justifyContent="space-between" px="5px" mb="10px">
@@ -289,7 +289,7 @@ const Presale = ({countdownNode}: {countdownNode: React.ReactNode}) => {
                   <Divider />
                   <Flex width="100%" justifyContent="space-between" px="5px" mb="10px">
                     <Text small>Initial Total Supply</Text>
-                    <Text small>20,000,000 LDX</Text>
+                    <Text small>12,600,000 LDX</Text>
                     {/* <Text small>1,000,000 DEF</Text> */}
                   </Flex>
                   <Divider />
@@ -300,7 +300,7 @@ const Presale = ({countdownNode}: {countdownNode: React.ReactNode}) => {
                   <Divider />
                   <Flex width="100%" justifyContent="space-between" px="5px" mb="10px">
                     <Text small>Listing Rate</Text>
-                    <Text small>1 LDX = 0.001 BNB</Text>
+                    <Text small>Targeted at 0.00018 - 0.00025 BNB</Text>
                   </Flex>
                   <Divider />
                   {/* <Flex width="100%" justifyContent="space-between" px="5px" mb="10px">
@@ -365,11 +365,8 @@ const Presale = ({countdownNode}: {countdownNode: React.ReactNode}) => {
               </Flex> */}
 
               <Flex justifyContent="center" mt="10px">
-                {/* <StyledBox><Text fontSize="18px">{countdown[0]}</Text></StyledBox>
-                <StyledBox ml="5px"><Text fontSize="18px">{countdown[1]}</Text></StyledBox>
-                <StyledBox ml="5px"><Text fontSize="18px">{countdown[2]}</Text></StyledBox>
-                <StyledBox ml="5px"><Text fontSize="18px">{countdown[3]}</Text></StyledBox> */}
-                {countdownNode}
+                {/* {countdownNode} */}
+                <Text fontSize="36px">Presale is {paused ? "paused." : "live."}</Text>
               </Flex>
               <Flex justifyContent="space-between" mt="20px">
                 <Text fontSize="12px">Total</Text>
@@ -407,6 +404,8 @@ const Presale = ({countdownNode}: {countdownNode: React.ReactNode}) => {
                     isLoading={pendingTx}
                     endIcon={<AutoRenewIcon spin color="currentColor" />}
                     mt="-10px"
+                    width="200px"
+                    height="48px"
                   >
                     Deposit
                   </Button> : <Button
@@ -417,6 +416,8 @@ const Presale = ({countdownNode}: {countdownNode: React.ReactNode}) => {
                     }}
                     disabled={isDepositDisabled}
                     mt="-10px"
+                    width="200px"
+                    height="48px"
                   >
                     Deposit
                   </Button>}
